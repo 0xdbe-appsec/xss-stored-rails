@@ -1,0 +1,16 @@
+<%= form_with model: bookmark do |form| %>
+<%# , url: bookmarks_path %>
+  <%= form.label :title %>
+  <%= form.text_area :title, size: "60x5" %>
+  <br/>
+  <%= form.label :link %>
+  <%= form.text_area :link, size: "60x5" %>
+  <br/>
+  <%= form.label :color %>
+  <%= form.text_area :color, size: "60x5" %>
+  <br/>
+  <%= form.label :comment %>
+  <%= form.text_area :comment, size: "60x5" %>
+  <br/>
+  <%= form.submit %>
+<% end %>

@@ -1,0 +1,9 @@
+<h1 style="color: <%= @Bookmark.color %>;"><%= @Bookmark.title %></h1>
+
+<h2>Link:</h2>
+<%= link_to @Bookmark.link, @Bookmark.link %>
+
+<h2>Comment:</h2>
+<p><%== @Bookmark.comment %></p>
+
+<%= link_to "Edit bookmarks", edit_bookmark_path %>
