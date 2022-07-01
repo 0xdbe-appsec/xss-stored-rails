@@ -1,4 +1,4 @@
-# # XSS hands-on with Rails application
+# XSS hands-on with Rails application
 
 ## Install
 
