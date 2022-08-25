@@ -1,7 +1,7 @@
 class BookmarksController < ApplicationController
 
     def bookmark_params
-        params.require(:bookmark).permit(:title, :link, :color, :comment)
+        params.require(:bookmark).permit(:title, :link, :color, :comment, :order)
     end
 
     def create
@@ -15,7 +15,7 @@ class BookmarksController < ApplicationController
     end
 
     def index
-        @Bookmarks = Bookmark.all
+        @Bookmarks = Bookmark.order(:order).all
     end
 
     def new

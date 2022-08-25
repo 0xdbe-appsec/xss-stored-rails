@@ -8,7 +8,13 @@
 bundle install
 ```
 
-- Run
+- Create SQLite database
+
+```console
+rails db:migrate
+```
+
+# Run
 
 ```console
 rails server
@@ -16,9 +22,10 @@ rails server
 
 ## Hack
 
-### Round 1: HTML
 
-Add a bookmark with html tags in comment:
+### Round 1: HTML tags
+
+- Add a bookmark with html tags in comment:
 
 - Title: 
 
@@ -92,3 +99,13 @@ red; background: url(https://http.cat/200)
 
 What happened ? and why ?
 
+
+### Round 6: javascript
+
+Add a bookmark with the following order id:
+
+```
+22; alert(1);
+```
+
+What happened ? and why ?

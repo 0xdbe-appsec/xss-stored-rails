@@ -6,4 +6,11 @@
 <h2>Comment:</h2>
 <p><%== @Bookmark.comment %></p>
 
+<script>
+  order=<%=@Bookmark.order %>;
+  console.log(order);
+</script>
+
 <%= link_to "Edit bookmarks", edit_bookmark_path %>
+<br/>
+<%= link_to "Bookmark List", "/" %>
