@@ -3,10 +3,7 @@
 <ul>
   <% @Bookmarks.each do |bookmark| %>
     <li>
-        <a href="<%= u bookmark.link %>" style="color: <%= bookmark.color %>;">
-          <%= bookmark.title %>
-        </a> |
-        <%= link_to "Details", bookmark_path(bookmark) %>
+        <%= link_to bookmark.title, bookmark_path(bookmark), :style=>"color: #{bookmark.color};" %>
     </li>
   <% end %>
 </ul>
