@@ -2,19 +2,38 @@
 
 ## Install
 
+
+### Database
+
+- Install postgresql
+
+- Create role
+
+```console
+sudo -u postgres createuser -P <SYSTEM_USER_NAME>
+```
+
+- Create database
+
+```console
+sudo -u postgres createdb -O <SYSTEM_USER_NAME> db_dev
+```
+
+### Application
+
 - Install dependencies
 
 ```console
 bundle install
 ```
 
-- Create SQLite database
+- Configure database
 
 ```console
 rails db:migrate
 ```
 
-# Run
+- Run
 
 ```console
 rails server
